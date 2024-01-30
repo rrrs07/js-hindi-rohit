@@ -1,7 +1,7 @@
 
 // (inside the `if` whatever is there is block scope outside it is a global scope)
 
-// (whatever is there in global scope is available for block scope but whatever inside block scope should get out to global scope)
+// (whatever is there in global scope is available for block scope but whatever inside block scope should not get out to global scope)
 
 let a = 100
 if (true){
