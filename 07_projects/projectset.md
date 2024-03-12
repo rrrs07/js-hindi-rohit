@@ -1,6 +1,6 @@
 #Projects related to dom
 
-##project 1 solution
+##project 1 solution--- color changer
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
@@ -31,7 +31,7 @@ buttons.forEach(function (button) {
 ```
 
 
-##project 2
+##project 2 bmi calculator
 
 ```javascript
 
