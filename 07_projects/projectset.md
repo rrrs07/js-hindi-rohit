@@ -181,3 +181,63 @@ function newGame() {
 }
 
 ```
+
+
+
+##project5--keyboard digit
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+   <div>
+   <table>
+   <tr>
+     <th>Key</th>
+     <th>Keycode</th> 
+     <th>Code</th>
+   </tr>
+   <tr>
+     <td>${e.key === ' ' ? 'Space' : e.key}</td>
+     <td>${e.keyCode}</td> 
+     <td>${e.code}</td>
+   </tr>
+   </div>
+  `;
+});
+
+```
+
+##project6--color changer on clicling start and stop button
+```javascript
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+console.log(randomColor());
+let intervalID;
+const startChangingColor = function () {
+  if (!intervalID) {
+    intervalID = setInterval(changeBgColor, 1000);
+  }
+
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+
+const stopChangingColor = function () {
+  clearInterval(intervalID);
+
+  intervalID = null; //value null after being used
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
