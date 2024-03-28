@@ -45,7 +45,7 @@ const TAsupport ={
 
 Teacher.__proto__ = User
 
-// modern syntax
+// modern syntax 
 Object.setPrototypeOf(TeachingSupport, Teacher)
 
 let anotherUsername = "ChaiAurCode     "
