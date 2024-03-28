@@ -18,29 +18,29 @@ let heroPower = {
 
 Object.prototype.rrrs = function(){
     console.log(`rrrs is present in all objects`);
-}
+};
 
 heroPower.rrrs();
 
 
 // inheritence
 
-const User ={
+const User = {
     name: "chai",
     email: "rrrs@gmail,com"
 }
 
-const Teacher ={ 
-    makeVideo : true;
+const Teacher = { 
+    makeVideo : true 
 }
 
 const TeachingSupport ={ 
-    isAvailable : false;
+    isAvailable : false
 }
 const TAsupport ={ 
     makeAssignment: 'JS assignment',
-    fullTime : true;
-    __proto__: TeachingSupport;
+    fullTime : true,
+    __proto__: TeachingSupport
 }
 
 Teacher.__proto__ = User
